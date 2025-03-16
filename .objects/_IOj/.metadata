@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Free Text-To-Speech for 28+ languages & MP3 Download  ttsMP3.com",
+  "Type": "App",
+  "Id": "_IOjepLkzkq0qUIAEcRc5Q",
+  "Reference": "lApLaOtZCUCzYe5eFy-kpA/_IOjepLkzkq0qUIAEcRc5Q",
+  "Created": "2025-03-15T20:18:53.4990358Z",
+  "Updated": "2025-03-15T20:18:53.4990358Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

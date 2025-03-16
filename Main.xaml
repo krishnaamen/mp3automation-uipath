@@ -1,0 +1,333 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Persistence.Activities.Tasks</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="938,2254" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="How are you feeling today?" Name="englishText" />
+      <Variable x:TypeArguments="x:String" Default="Hvordan har du det i dag?" Name="danishText" />
+      <Variable x:TypeArguments="x:String" Default="C:\Users\shuva\Downloads" Name="downloadFolder" />
+      <Variable x:TypeArguments="x:String" Default="C:\Users\shuva\Documents\CanvaArchive" Name="archiveFolder" />
+      <Variable x:TypeArguments="x:String" Default="Hvordan har du det i dag" Name="fileNameBase" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="706,2231" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="672,2121" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="638,2061" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\shuva\Desktop\Book1.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,1729" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="570,1669" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;nurshig&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,1456" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Free Text-To-Speech for 28+ languages &amp; MP3 Download | ttsMP3.com" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="502,1396" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="161651d8-ef65-47a2-a9ca-3812b4e52be7" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,1116" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''TEXTAREA voicetext''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="161651d8-ef65-47a2-a9ca-3812b4e52be7" Text="[CurrentRow(&quot;Column2&quot;).toString]" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="ttsmp3.com" CVScreenId="4add58db-0eea-42f3-a91d-19a95e7f3b6b" CvElementArea="375, 333, 608, 226" CvType="InputBox" DesignTimeRectangle="374, 387, 609, 224" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='voicetext' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='voicetext' tag='TEXTAREA' type='' class='' placeholder='your text here' aaname='' /&gt;" Guid="827f299b-689d-46f4-92b0-b3443a4483a1" InformativeScreenshot="c97af19246c0a6d8f52b3045f7859457.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Text-To-Speech for 28+ languages &amp;amp; MP3 Download | ttsMP3.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                          <uix:TargetAnchorable.PointOffset>
+                                            <uix:PointOffset />
+                                          </uix:TargetAnchorable.PointOffset>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                    <uix:NSelectItem DisplayName="Select Item ''US English / Kimberly''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Danish / Mads" ScopeIdentifier="161651d8-ef65-47a2-a9ca-3812b4e52be7" Version="V4">
+                                      <uix:NSelectItem.Items>
+                                        <scg:List x:TypeArguments="x:String" Capacity="60">
+                                          <x:String>Arabic / Zeina</x:String>
+                                          <x:String>Australian English / Nicole</x:String>
+                                          <x:String>Australian English / Russell</x:String>
+                                          <x:String>Brazilian Portuguese / Ricardo</x:String>
+                                          <x:String>Brazilian Portuguese / Camila</x:String>
+                                          <x:String>Brazilian Portuguese / Vitória</x:String>
+                                          <x:String>British English / Brian</x:String>
+                                          <x:String>British English / Amy</x:String>
+                                          <x:String>British English / Emma</x:String>
+                                          <x:String>Canadian French / Chantal</x:String>
+                                          <x:String>Castilian Spanish / Enrique</x:String>
+                                          <x:String>Castilian Spanish / Lucia</x:String>
+                                          <x:String>Castilian Spanish / Conchita</x:String>
+                                          <x:String>Chinese Mandarin / Zhiyu</x:String>
+                                          <x:String>Danish / Naja</x:String>
+                                          <x:String>Danish / Mads</x:String>
+                                          <x:String>Dutch / Ruben</x:String>
+                                          <x:String>Dutch / Lotte</x:String>
+                                          <x:String>French / Mathieu</x:String>
+                                          <x:String>French / Céline</x:String>
+                                          <x:String>French / Léa</x:String>
+                                          <x:String>German / Vicki</x:String>
+                                          <x:String>German / Marlene</x:String>
+                                          <x:String>German / Hans</x:String>
+                                          <x:String>Icelandic / Karl</x:String>
+                                          <x:String>Icelandic / Dóra</x:String>
+                                          <x:String>Indian English / Aditi</x:String>
+                                          <x:String>Indian English / Raveena</x:String>
+                                          <x:String>Italian / Giorgio</x:String>
+                                          <x:String>Italian / Carla</x:String>
+                                          <x:String>Italian / Bianca</x:String>
+                                          <x:String>Japanese / Takumi</x:String>
+                                          <x:String>Japanese / Mizuki</x:String>
+                                          <x:String>Korean / Seoyeon</x:String>
+                                          <x:String>Mexican Spanish / Mia</x:String>
+                                          <x:String>Norwegian / Liv</x:String>
+                                          <x:String>Polish / Jan</x:String>
+                                          <x:String>Polish / Maja</x:String>
+                                          <x:String>Polish / Ewa</x:String>
+                                          <x:String>Polish / Jacek</x:String>
+                                          <x:String>Portuguese / Cristiano</x:String>
+                                          <x:String>Portuguese / Inês</x:String>
+                                          <x:String>Romanian / Carmen</x:String>
+                                          <x:String>Russian / Tatyana</x:String>
+                                          <x:String>Russian / Maxim</x:String>
+                                          <x:String>Swedish / Astrid</x:String>
+                                          <x:String>Turkish / Filiz</x:String>
+                                          <x:String>US English / Kimberly</x:String>
+                                          <x:String>US English / Ivy</x:String>
+                                          <x:String>US English / Kendra</x:String>
+                                          <x:String>US English / Justin</x:String>
+                                          <x:String>US English / Joey</x:String>
+                                          <x:String>US English / Matthew</x:String>
+                                          <x:String>US English / Salli</x:String>
+                                          <x:String>US English / Joanna</x:String>
+                                          <x:String>US Spanish / Penélope</x:String>
+                                          <x:String>US Spanish / Lupe</x:String>
+                                          <x:String>US Spanish / Miguel</x:String>
+                                          <x:String>Welsh / Gwyneth</x:String>
+                                          <x:String>Welsh English / Geraint</x:String>
+                                        </scg:List>
+                                      </uix:NSelectItem.Items>
+                                      <uix:NSelectItem.Target>
+                                        <uix:TargetAnchorable BrowserURL="ttsmp3.com" DesignTimeRectangle="374, 628, 279, 23" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='sprachwahl' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sprachwahl' tag='SELECT' type='' class='' aaname='' /&gt;" Guid="0b0a223e-0e8e-4741-89b9-6d18b652d0bf" InformativeScreenshot="f7449ccdf89fa71b948719f434575dce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Text-To-Speech for 28+ languages &amp;amp; MP3 Download | ttsMP3.com' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                          <uix:TargetAnchorable.PointOffset>
+                                            <uix:PointOffset />
+                                          </uix:TargetAnchorable.PointOffset>
+                                        </uix:TargetAnchorable>
+                                      </uix:NSelectItem.Target>
+                                    </uix:NSelectItem>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Download as MP3''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="161651d8-ef65-47a2-a9ca-3812b4e52be7" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="ttsmp3.com" DesignTimeRectangle="821, 622, 162, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='downloadenbutton' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='downloadenbutton' tag='INPUT' type='submit' class='subbuttons' aaname='Download as MP3' check:text='Download as MP3' /&gt;" Guid="410f8910-c042-4412-82ee-930fece82e38" InformativeScreenshot="5e9fe69abf81309e93c49d6e11ae32de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Text-To-Speech for 28+ languages &amp;amp; MP3 Download | ttsMP3.com' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                          <uix:TargetAnchorable.PointOffset>
+                                            <uix:PointOffset />
+                                          </uix:TargetAnchorable.PointOffset>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="161651d8-ef65-47a2-a9ca-3812b4e52be7" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                                      <uix:NKeyboardShortcuts.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NKeyboardShortcuts.VerifyOptions>
+                                    </uix:NKeyboardShortcuts>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[danishText]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow("Column2").toString.Trim]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-8, -8, 1382, 705" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS/SURBVGhD7ZlrqFVFFIDN0iwt06IysaC0KDXTzDAtIyoT8VEJ/qh8IJhp0bskSUPwESGCBkU/i7L6UZQpRYQKIT4wLbHIDImyd9lTS83b98FdMGezz73sc664D7rg4949d/bstWbWrLVmbjukqcHJbWwkchsbiYqHA7ADNpWUT0EdU50rHr6H66FTSVE3dUx1rnjwj9dAWUXdjhtwNOXYM+BsuAXGHAG6wClwEdwGj8GTcDeow3nQAVIpbIDKfwf/HgGug3lg2P4HDsKh5p974UMYB+0hpLABI+Eb+DvBj9j3MOxvbstDpewTfX0v5QPYB//BRlgEz8BHYKy37WI4AUIKG3AqXAh9Et4H+6r87c1teegKv4MKvgUTQVeRJ8CZdhwT1JkQ4u8zQOWzUtiAPHkT7OvsDbGhiujnv4KzvQROhhATUqzOy3ASpJK6TSqlMeAS+AUcxz6z4HRoTUpjgH79NPwJroQ+vx50raFwFuStQmkMULrBQ7AFjEqx0X1nJYyHrGuVygClI1wAd8K7YPRybI1Rl9GQSukMSMVqcwS8BxGhVoHJLqRUBrgPsplW6Qdfgt/4BNLNXSoDhoPlQzb6OOYe8BtroTOElMaAq2E3OMZr4B64FYxCX4Djm8lnQl2lRJ7Ua4CuY1aO42GEUSORfX22FloGXSGVNjFgOjwLS8EIUk36g7XNcrB8SEOivn8pPAyrYSdYNH4GK8DVyEtsbWJAW4vGWHNZXvvzRKgmNRmgDwZpZZiVvH5pW/ZvWbHdVZJqfQobYEU4G+aDtfsVkCdm1TlgP7kZzoFHkrbA8SzTjfshHpymga75HPie4VSDUylswCiIokv0z2x6d7b8uJsv+lnnXA6eJXy2pHaDir+7YQ0GvWEwbAaTl7WRJXgcau4Ds3VIzQb4USOFUWUgpNIdPJxELeM4qQEq+wa4gk/BC/Aj2O5svwIq/THcA4ZUayGNMKH1hZCaDfgDzIoq6DKnG+1GUCFnzGjiOKkBf8Fk8B0xMTmG/SwVBoDfvArc0LrNWPC730KqT80G/ATGZVfgczAEKsb2xeDqWMO8DY7TmgGGVvu9DhHrVf4McEWnwG+wHTwRhtRsgDPs0uqrVoz3gsqcDxvArHkXmFUdpyUXeh5+AMd5EKIeMm+8CE6C+UAmQbrn6jLgJpgL7geX3rPrBDAjexD3GuRVcJzWNrHvuApGn5Brwe+7l8TbCr+fRqK6DLgBPArqRrYZKt8BN5sHEzNnngERcSKMPg7DIBvNeoCu8wCYnXXLr8C6KaRuA1xuo4azuAbc3EYKY3Y1A2IPVEtkPjtuatAgcFxvPu4H3VWp2wDFCKFSGiEvgcq3ZID7I0/OBa9QnBTrpXAXJ2QXuLcehTY1oCe4ce1v4pkKzmItBlwGWyF83tuJOyBc0wLPY2WsWmEDTPkeLr4G73IUQ+dCUPlt4CWWchq4Gi77AjCq6AY/g0rliTPrN9aBhjrjge964LHICylsgDFafzT7OsOKs2GdYwlgPgjfVRkvak1IvcCzrLXTleA1STXRbVxV70GtkzzUaLBjZ09xhQ0omxw34GjLsWFAQ/+b1fTtbUH2H8xlwVyhjqnOFQ+NSG5jI5Hb2CC0a/ofzcxLg2kY7/oAAAAASUVORK5CYII=" InformativeScreenshot="d53110483e578cf2c8af88aea2c781e3.jpg" Selector="&lt;html app='chrome.exe' title='Free Text-To-Speech for 28+ languages &amp;amp; MP3 Download | ttsMP3.com' /&gt;" Url="https://ttsmp3.com/" Version="V2" />
+                              </uix:NApplicationCard.TargetApp>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

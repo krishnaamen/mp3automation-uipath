@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Free Text-To-Speech for 28+ languages (1)",
+  "Type": "Screen",
+  "Id": "GE2LIJ0G0ke2xrQ-lAZB5A",
+  "Reference": "lApLaOtZCUCzYe5eFy-kpA/GE2LIJ0G0ke2xrQ-lAZB5A",
+  "ParentRef": "lApLaOtZCUCzYe5eFy-kpA/9DMarlSHtE2axq-mVtH40g",
+  "Created": "2025-03-15T20:19:30.3573933Z",
+  "Updated": "2025-03-15T20:19:30.3573933Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
